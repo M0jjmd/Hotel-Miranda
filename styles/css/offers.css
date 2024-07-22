@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.header {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.header__menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1rem;
+}
+.header__menu:before {
+  content: "☰";
+}
+.header__menu.show::before {
+  content: "✖";
+}
+.header__title {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: auto;
+  margin-top: 0.4rem;
+}
+.header__title__logo {
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header__title__logo p {
+  margin: 0 auto;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header__title__titl {
+  font-family: "Archivo";
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__title__titl h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header__title__titl h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.header__loginSearch {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__loginSearch__imgs {
+  margin: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+/*# sourceMappingURL=offers.css.map */
