@@ -1,5 +1,7 @@
 @use '../components/header';
 @use '../components/footer';
+@use '../constants/button';
+@use '../constants/swiper';
 
 * {
     box-sizing: border-box;
@@ -9,4 +11,185 @@
 
 body {
     min-width: 320px;
+}
+
+.aboutUs {
+    background-color: #333333;
+    margin: 0 auto;
+    color: white;
+
+    &__title {
+        margin: 0 1rem;
+        padding: 3rem 0 2rem 0;
+
+        & h2 {
+            font-weight: 700;
+            font-size: 1rem;
+            font-family: "Archivo";
+        }
+
+        & h3 {
+            font-weight: 400;
+            font-size: 3rem;
+            font-family: "Old Standard TT";
+        }
+    }
+
+    &__homeInfo {
+        text-align: right;
+
+        & button {
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            font: inherit;
+            color: inherit;
+            text-align: inherit;
+            text-transform: none;
+            box-shadow: none;
+            cursor: pointer;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            display: inline;
+            background-image: none;
+        }
+
+        & p {
+            display: inline-block;
+        }
+    }
+}
+
+.offer {
+    margin: 3rem 1rem;
+
+    &__image {
+        position: relative;
+        display: inline-block;
+
+        & img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        &__text {
+            font-family: "Archivo";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: right;
+        }
+
+        &__oldPrice {
+            text-decoration: line-through;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #BEAD8E;
+        }
+
+        &__newPrice {
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: #DE5777;
+        }
+    }
+
+    &__description {
+        margin: 1rem 0;
+
+        &__name {
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 1rem;
+            color: #777777;
+        }
+
+        &__fullName {
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+
+        &__description {
+            font-family: "Roboto";
+            font-weight: 400;
+            color: #777777;
+        }
+    }
+
+    &__items {
+
+        &__especificaciones {
+            display: inline-block;
+            list-style-type: none;
+            width: 45%;
+
+            & li {
+                font-family: "Roboto";
+                font-weight: 500;
+                color: #777777;
+                margin-bottom: 1rem;
+
+                & img {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        &__book {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.popularList {
+    text-align: center;
+    background-color: #222222;
+
+    &__title {
+        padding: 2rem;
+
+        & h2 {
+            color: #BDAC8D;
+            font-family: "Archivo";
+            font-weight: 500;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        & h3 {
+            color: white;
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.swiper-description {
+    background-color: white;
+    position: relative;
+    margin: 0 1rem;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow: visible;
+
+    &__desc {
+        background-color: white;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        height: auto;
+    }
 }
