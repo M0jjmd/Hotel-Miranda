@@ -213,50 +213,6 @@
   transition: background-color 0.3s ease;
 }
 
-.swiper {
-  width: 90%;
-  position: relative;
-  background-color: white;
-}
-
-.swiper-slide {
-  position: relative;
-}
-
-.swiper-img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-250%);
-  height: 2rem;
-  width: 2rem;
-  background-color: white;
-  background-size: 50% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 1rem;
-  color: black;
-}
-
-.swiper-button-prev {
-  left: 1rem;
-}
-
-.swiper-button-next {
-  right: 1rem;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -305,145 +261,108 @@ body {
   color: black;
 }
 
-.offer {
-  margin: 3rem 1rem;
-}
-.offer__image {
+.hotel-address {
   position: relative;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+.hotel-address__background-number {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 10rem;
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.hotel-address__content {
+  position: relative;
+  z-index: 2;
+  font-family: "Old Standard TT";
+  background-color: transparent;
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+}
+.hotel-address__content__icon, .hotel-address__content__text {
   display: inline-block;
 }
-.offer__image img {
-  display: block;
+.hotel-address__content__icon {
+  margin: 0 1rem 1rem 0;
+  height: auto;
+}
+.hotel-address__content__text {
+  white-space: normal;
+}
+.hotel-address__content__text h2 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.hotel-address__content__text p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #777777;
+}
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.2rem;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+}
+.contact__img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.3rem;
 }
-.offer__image__text {
-  font-family: "Archivo";
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: white;
-  font-size: 18px;
-  padding: 5px;
-  border-radius: 5px;
-  text-align: right;
-}
-.offer__image__oldPrice {
-  text-decoration: line-through;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #BEAD8E;
-}
-.offer__image__newPrice {
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #DE5777;
-}
-.offer__description {
-  margin: 1rem 0;
-}
-.offer__description__name {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 1rem;
-  color: #777777;
-}
-.offer__description__fullName {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 2.5rem;
-  margin: 1rem 0;
-}
-.offer__description__description {
-  font-family: "Roboto";
-  font-weight: 400;
-  color: #777777;
-}
-.offer__items__especificaciones {
-  display: inline-block;
-  list-style-type: none;
-  width: 45%;
-}
-.offer__items__especificaciones li {
-  font-family: "Roboto";
-  font-weight: 500;
-  color: #777777;
-  margin-bottom: 1rem;
-}
-.offer__items__especificaciones li img {
-  margin-right: 0.5rem;
-}
-.offer__items__book {
-  margin-top: 1rem;
+.contact__form-container {
+  width: 100%;
 }
 
-.popularList {
-  text-align: center;
-  background-color: #222222;
-  padding-bottom: 2rem;
-}
-.popularList__title {
-  padding: 2rem;
-}
-.popularList__title h2 {
-  color: #BDAC8D;
-  font-family: "Archivo";
-  font-weight: 500;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-.popularList__title h3 {
-  color: white;
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-.swiper-description {
-  background-color: white;
+.form__field {
   position: relative;
-  overflow: visible;
+  margin-bottom: 1rem;
 }
-.swiper-description__img {
-  background-color: white;
-  position: absolute;
-  top: -45%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  height: auto;
-}
-.swiper-description__desc {
-  margin-top: 2rem;
-}
-.swiper-description__desc__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-.swiper-description__desc p {
+.form__field input {
+  width: 100%;
+  background-color: #F8F8F8;
+  padding: 1rem 0.5rem 1rem 2rem;
+  border: none;
   font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #777777;
-  margin-top: 1rem;
-}
-.swiper-description__desc__book-now {
-  margin: 1rem auto;
-}
-.swiper-description__desc__book-now__price {
-  font-family: "Archivo";
-  font-weight: 700;
   font-size: 1rem;
-  color: #BEAD8E;
-  display: inline-block;
 }
-.swiper-description__desc__book-now__now {
-  font-family: "Archivo";
-  font-weight: 700;
+.form__field textarea {
+  width: 100%;
+  background-color: #F8F8F8;
+  padding: 0.5rem 0.5rem 3rem 2rem;
+  border: none;
+  font-family: "Roboto";
   font-size: 1rem;
-  color: #BDBDBD;
-  display: inline-block;
+}
+.form__field__icon {
+  position: absolute;
+  left: 0.7rem;
+  top: 35%;
+  pointer-events: none;
+}
+.form__field__messageIcon {
+  position: absolute;
+  left: 0.7rem;
+  top: 10%;
+  pointer-events: none;
+}
+.form__button {
+  padding: 1rem 5rem;
+}
+.form__button:hover {
+  background-color: #0056b3;
 }
 
-/*# sourceMappingURL=offers.css.map */
+/*# sourceMappingURL=contact.css.map */

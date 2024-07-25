@@ -1,0 +1,184 @@
+@use '../components/header';
+@use '../components/footer';
+@use '../constants/button';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+.aboutUs {
+    background-color: #333333;
+    margin: 0 auto;
+    color: white;
+
+    &__title {
+        margin: 0 1rem;
+        padding: 3rem 0 2rem 0;
+
+        & h2 {
+            font-weight: 700;
+            font-size: 1rem;
+            font-family: "Archivo";
+        }
+
+        & h3 {
+            font-weight: 400;
+            font-size: 3rem;
+            font-family: "Old Standard TT";
+        }
+    }
+
+    &__homeInfo {
+        text-align: right;
+        padding-right: 1rem;
+
+        &__home {
+            display: inline-block;
+            background-color: white;
+            padding: 0.8rem;
+
+            & a {
+                font-family: "Archivo";
+                color: #BEAD8E;
+            }
+
+            & p {
+                display: inline-block;
+                font-family: "Archivo";
+                color: black;
+            }
+        }
+    }
+}
+
+.hotel-address {
+    position: relative;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+    &__background-number {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 10rem;
+        position: absolute;
+        right: 5%;
+        top: 0%;
+        color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        font-family: "Old Standard TT";
+        background-color: transparent;
+        display: inline-block;
+        text-align: left;
+        white-space: nowrap;
+
+        &__icon,
+        &__text {
+            display: inline-block;
+        }
+
+        &__icon {
+            margin: 0 1rem 1rem 0;
+            height: auto;
+        }
+
+        &__text {
+            white-space: normal;
+
+            & h2 {
+                font-family: "Old Standard TT";
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+
+            & p {
+                font-family: "Roboto";
+                font-weight: 400;
+                font-size: 1rem;
+                color: #777777;
+            }
+        }
+    }
+
+}
+
+.contact {
+    // max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.3rem;
+    }
+
+    &__form-container {
+        width: 100%;
+    }
+}
+
+.form {
+    &__field {
+        position: relative;
+        margin-bottom: 1rem;
+
+        & input {
+            width: 100%;
+            background-color: #F8F8F8;
+            padding: 1rem 0.5rem 1rem 2rem;
+            border: none;
+            font-family: "Roboto";
+            font-size: 1rem;
+        }
+
+        & textarea {
+            width: 100%;
+            background-color: #F8F8F8;
+            padding: 0.5rem 0.5rem 3rem 2rem;
+            border: none;
+            font-family: "Roboto";
+            font-size: 1rem;
+        }
+
+        &__icon {
+            position: absolute;
+            left: 0.7rem;
+            top: 35%;
+            pointer-events: none;
+        }
+
+        &__messageIcon {
+            position: absolute;
+            left: 0.7rem;
+            top: 10%;
+            pointer-events: none;
+        }
+    }
+
+    &__button {
+        
+        // width: 100%;
+        padding: 1rem 5rem;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
