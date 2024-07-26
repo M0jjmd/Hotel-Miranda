@@ -2,7 +2,7 @@ let player;
 let playButton = document.getElementById('play-button');
 let iframe = document.getElementById('video-iframe');
 
-function onYouTubeIframeAPIReady() {
+const onYouTubeIframeAPIReady = () => {
     player = new YT.Player('video-iframe', {
         events: {
             'onReady': onPlayerReady,
