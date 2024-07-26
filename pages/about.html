@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/css/contact.css">
-    <title>Contact</title>
+    <link rel="stylesheet" href="../styles/css/about.css">
+    <title>About</title>
 </head>
 
 <body>
@@ -32,80 +32,33 @@
         <section class="aboutUs">
             <div class="aboutUs__title">
                 <h2>THE ULTIMATE LUXURY</h2>
-                <h3>New Details</h3>
+                <h3>About Us</h3>
             </div>
             <div class="aboutUs__homeInfo">
                 <div class="aboutUs__homeInfo__home">
                     <a href="">Home</a>
-                    <p> | Blog</p>
+                    <p> | About</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="hotel-address">
-                <div class="hotel-address__background-number">01</div>
-                <div class="hotel-address__content">
-                    <img src="../img/email.png" alt="email" class="hotel-address__content__icon">
-                    <div class="hotel-address__content__text">
-                        <h2>Hotel Address</h2>
-                        <p>19/A, Cirikon City hall Tower<br>New York, NYC</p>
-                    </div>
-                </div>
+        <section class="video-show">
+
+            <div class="iframe-container">
+                <iframe id="video-iframe" src="https://www.youtube.com/embed/Bu3Doe45lcU?enablejsapi=1" frameborder="0"
+                    allowfullscreen></iframe>
+                <button id="play-button" class="play-button"></button>
             </div>
 
-            <div class="hotel-address">
-                <div class="hotel-address__background-number">02</div>
-                <div class="hotel-address__content">
-                    <img src="../img/phone.png" alt="email" class="hotel-address__content__icon">
-                    <div class="hotel-address__content__text">
-                        <h2>Phone Number</h2>
-                        <p>+ 97656 8675 7864 7<br>+ 876 766 8675 765 6</p>
-                    </div>
-                </div>
+            <!-- <div class="video-container">
+                <iframe id="videoFrame" src="https://www.youtube.com/embed/Bu3Doe45lcU?enablejsapi=1" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="play-button"></div>
             </div>
-
-            <div class="hotel-address">
-                <div class="hotel-address__background-number">03</div>
-                <div class="hotel-address__content">
-                    <img src="../img/email.png" alt="email" class="hotel-address__content__icon">
-                    <div class="hotel-address__content__text">
-                        <h2>Email</h2>
-                        <p>info@webmail.com<br>jobs.webmail@mail.com</p>
-                    </div>
-                </div>
-            </div>
+            <div class="video-description">
+                <p>Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</p>
+            </div> -->
         </section>
-
-        <section class="contact">
-            <img src="../img/hotel.jpeg" alt="" class="contact__img">
-            <div class="contact__form-container">
-                <form class="from">
-                    <div class="form__field">
-                        <img src="../img/fullName.png" alt="Name Icon" class="form__field__icon">
-                        <input type="text" placeholder="Your full name" required>
-                    </div>
-                    <div class="form__field">
-                        <img src="../img/phoneNumber.png" alt="Phone Icon" class="form__field__icon">
-                        <input type="tel" placeholder="Add phone number" required>
-                    </div>
-                    <div class="form__field">
-                        <img src="../img/iconEmail.png" alt="Email Icon" class="form__field__icon">
-                        <input type="email" placeholder="Enter email address" required>
-                    </div>
-                    <div class="form__field">
-                        <img src="../img/subject.png" alt="Subject Icon" class="form__field__icon">
-                        <input type="text" placeholder="Enter subject" required>
-                    </div>
-                    <div class="form__field">
-                        <img src="../img/enterMessage.png" alt="Message Icon" class="form__field__messageIcon">
-                        <textarea placeholder="Enter message" required></textarea>
-                    </div>
-                    <button type="submit" class="form__button button">SEND</button>
-                </form>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">
@@ -199,6 +152,8 @@
             <p>Terms of use | Privacy Environmental Policy</p>
         </section>
     </footer>
+    <script src="../scripts/videoPlayer.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 
 </html>

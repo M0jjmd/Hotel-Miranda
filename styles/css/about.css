@@ -1,0 +1,301 @@
+@charset "UTF-8";
+.header {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.header__menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1rem;
+}
+.header__menu:before {
+  content: "☰";
+}
+.header__menu.show::before {
+  content: "✖";
+}
+.header__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-top: 0.4rem;
+}
+.header__title__logo {
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header__title__logo p {
+  font-family: "Archivo";
+  margin: 0 auto;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header__title__titl {
+  font-family: "Archivo";
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__title__titl h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header__title__titl h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.header__loginSearch {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__loginSearch__imgs {
+  margin: 0.5rem;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+.footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/footerBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.intro {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1rem;
+  color: #777777;
+}
+.intro__title__logo {
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.6rem;
+}
+.intro__title__logo p {
+  margin: 1rem;
+  color: white;
+}
+.intro__title__titl {
+  font-family: "Archivo";
+  display: inline-block;
+  vertical-align: middle;
+}
+.intro__title__titl h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+.intro__title__titl h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.intro__text {
+  margin-top: 1rem;
+  color: #777777;
+  font-size: 1rem;
+  font-family: "Archivo";
+}
+.intro__socials {
+  margin-top: 1rem;
+}
+.intro__socials__twitterImg {
+  display: inline-block;
+  background-color: #BEAD8E;
+}
+
+.socialsImgs {
+  display: inline-block;
+  background-color: #F8F8F8;
+}
+.socialsImgs__img {
+  margin: 0.5rem;
+}
+
+.services {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.services h2 {
+  font-family: "Old Standard TT";
+  text-align: left;
+}
+.services__container__containers {
+  display: inline-block;
+  text-align: left;
+  list-style-type: none;
+  vertical-align: top;
+}
+.services__container__containers li {
+  margin-top: 1rem;
+  font-family: "Roboto";
+  color: #777777;
+  font-size: 1.1rem;
+}
+
+.contactUs {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.contactUs h2 {
+  font-family: "Old Standard TT";
+  text-align: left;
+}
+.contactUs__container {
+  margin-top: 2rem;
+}
+.contactUs__container__content {
+  margin: 1rem 1rem 3rem 0;
+}
+.contactUs__container__content__item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.contactUs__container__content__item h2 {
+  font-family: "Old Standard TT";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.contactUs__container__content__item h3 {
+  font-family: "Old Standard TT";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.copyright {
+  width: 90%;
+  margin: 0 auto;
+}
+.copyright p {
+  font-family: "Roboto";
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.aboutUs {
+  background-color: #333333;
+  margin: 0 auto;
+  color: white;
+}
+.aboutUs__title {
+  margin: 0 1rem;
+  padding: 3rem 0 2rem 0;
+}
+.aboutUs__title h2 {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Archivo";
+}
+.aboutUs__title h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: "Old Standard TT";
+}
+.aboutUs__homeInfo {
+  text-align: right;
+  padding-right: 1rem;
+}
+.aboutUs__homeInfo__home {
+  display: inline-block;
+  background-color: white;
+  padding: 0.8rem;
+}
+.aboutUs__homeInfo__home a {
+  font-family: "Archivo";
+  color: #BEAD8E;
+}
+.aboutUs__homeInfo__home p {
+  display: inline-block;
+  font-family: "Archivo";
+  color: black;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 0 auto;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-show {
+  margin: 2rem;
+  text-align: center;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.play-button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/*# sourceMappingURL=about.css.map */
