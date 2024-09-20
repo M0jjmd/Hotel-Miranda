@@ -199,6 +199,20 @@
   margin-bottom: 1rem;
 }
 
+.button {
+  background-color: #BDAC8D;
+  color: white;
+  border: none;
+  padding: 1.3rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: "Archivo";
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -247,11 +261,16 @@ body {
   color: black;
 }
 
+.video-show {
+  margin: 3rem 0;
+}
+
 .iframe-container {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding-bottom: 56.25%;
   height: 0;
+  margin: 1rem auto;
   overflow: hidden;
 }
 .iframe-container iframe {
@@ -264,14 +283,240 @@ body {
 }
 
 .video-description {
-  font-family: "Old Standard TT", serif;
   font-size: 1.2rem;
   color: #333;
   margin-top: 1rem;
   text-align: center;
 }
 .video-description p {
-  line-height: 1.6;
+  font-family: "Old Standard TT";
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.image-container img {
+  height: auto;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.hotel-restaurant {
+  margin: 1rem auto;
+  width: 90%;
+}
+.hotel-restaurant__img {
+  margin: 0rem auto;
+}
+.hotel-restaurant__img img {
+  width: 100%;
+  margin: 1rem 0;
+}
+.hotel-restaurant__title {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #777777;
+}
+.hotel-restaurant__description {
+  margin: 2rem auto;
+}
+.hotel-restaurant__description h2 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.hotel-restaurant__description p {
+  font-family: "Archivo";
+  font-size: 0.8rem;
+  color: #777777;
+}
+.hotel-restaurant button {
+  padding: 1.3rem 3rem;
+  width: auto;
+}
+
+.facilities {
+  background-color: #222222;
+  padding-bottom: 2rem;
+}
+.facilities__title {
+  padding: 2rem;
+  text-align: center;
+}
+.facilities__title h2 {
+  color: #BDAC8D;
+  font-family: "Archivo";
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.facilities__title h3 {
+  color: white;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.facilities-swiper {
+  width: 90%;
+  height: auto;
+}
+.facilities-swiper .swiper-slide {
+  position: relative;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  background-color: #292929;
+  width: 20rem;
+}
+.facilities-swiper .swiper-slide .swiper-background-number {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.facilities-swiper .swiper-slide .swiper-content {
+  position: relative;
+  z-index: 2;
+}
+.facilities-swiper .swiper-slide .swiper-content img, .facilities-swiper .swiper-slide .swiper-content__description {
+  text-align: left;
+  vertical-align: top;
+  color: white;
+}
+.facilities-swiper .swiper-slide .swiper-content__description {
+  white-space: normal;
+}
+.facilities-swiper .swiper-slide .swiper-content__description h2 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.facilities-swiper .swiper-slide .swiper-content__description p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+}
+.facilities-swiper .swiper-pagination {
+  position: initial;
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+.facilities-swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #BDAC8D;
+  opacity: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+.facilities-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.fun-facts {
+  text-align: left;
+  padding: 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.fun-facts h2 {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #777777;
+}
+.fun-facts h3 {
+  font-family: "Old Standart TT";
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: #222222;
+}
+.fun-facts h2,
+.fun-facts h3 {
+  margin: 0.5rem 0;
+}
+.fun-facts__blocks {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto 1.5rem;
+  padding: 1rem;
+  height: 5rem;
+}
+.fun-facts__blocks img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fun-facts__blocks img:first-of-type {
+  left: 0;
+}
+.fun-facts__blocks .fun-facts__blocks__arrow {
+  right: 0;
+}
+.fun-facts__blocks__texts {
+  display: inline-block;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.fun-facts__blocks__texts .texts-number {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3rem;
+}
+.fun-facts__blocks__texts .texts-content {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #777777;
+}
+
+.simple-swiper {
+  margin-bottom: 3rem;
+}
+.simple-swiper .swiper-slide {
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.simple-swiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.simple-swiper .swiper-pagination {
+  text-align: center;
+  bottom: 0.8rem;
+  position: initial;
+}
+.simple-swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #EDEDED;
+  opacity: 0.8;
+  margin: 0 0.1rem;
+  border-radius: 50%;
+}
+.simple-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #bdac8d;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=about.css.map */

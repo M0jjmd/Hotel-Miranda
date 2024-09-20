@@ -59,17 +59,18 @@ body {
 
 .hotel-address {
     position: relative;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
     margin: 0 auto;
     background-color: #FFFFFF;
+    width: 20rem;
 
     &__background-number {
         font-family: "Roboto";
         font-weight: 700;
         font-size: 10rem;
         position: absolute;
-        right: 5%;
-        top: 0%;
+        right: 0;
+        top: 0;
         color: rgba(0, 0, 0, 0.1);
         z-index: 1;
     }
@@ -110,11 +111,9 @@ body {
             }
         }
     }
-
 }
 
 .contact {
-    // max-width: 600px;
     width: 100%;
     margin: 0 auto;
     padding: 1.2rem;
@@ -173,8 +172,7 @@ body {
     }
 
     &__button {
-        
-        // width: 100%;
+
         padding: 1rem 5rem;
 
         &:hover {
