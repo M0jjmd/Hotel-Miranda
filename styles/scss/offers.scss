@@ -13,7 +13,7 @@ body {
     min-width: 320px;
 }
 
-.aboutUs {
+.homeOffers {
     background-color: #333333;
     margin: 0 auto;
     color: white;
@@ -59,16 +59,20 @@ body {
 }
 
 .offer {
-    margin: 3rem 1rem;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12), 
+                0 8px 10px rgba(0, 0, 0, 0.08);
 
     &__image {
         position: relative;
-        display: inline-block;
 
-        & img {
+        img {
             display: block;
             width: 100%;
             height: auto;
+            margin: 0 auto;
         }
 
         &__text {
@@ -151,6 +155,7 @@ body {
     background-color: #222222;
     padding-bottom: 2rem;
 
+
     &__title {
         padding: 2rem;
 
@@ -178,12 +183,17 @@ body {
 
     &__img {
         background-color: white;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
         position: absolute;
-        top: -45%;
+        top: -50%;
         left: 50%;
         transform: translateX(-50%);
         display: block;
         height: auto;
+
+        img {
+            margin: 0.5rem 1rem;
+        }
     }
 
     &__desc {
