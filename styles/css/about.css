@@ -223,39 +223,39 @@ body {
   min-width: 320px;
 }
 
-.aboutUs {
+.homeAbout {
   background-color: #333333;
   margin: 0 auto;
   color: white;
 }
-.aboutUs__title {
+.homeAbout__title {
   margin: 0 1rem;
   padding: 3rem 0 2rem 0;
 }
-.aboutUs__title h2 {
+.homeAbout__title h2 {
   font-weight: 700;
   font-size: 1rem;
   font-family: "Archivo";
 }
-.aboutUs__title h3 {
+.homeAbout__title h3 {
   font-weight: 400;
   font-size: 3rem;
   font-family: "Old Standard TT";
 }
-.aboutUs__homeInfo {
+.homeAbout__homeInfo {
   text-align: right;
   padding-right: 1rem;
 }
-.aboutUs__homeInfo__home {
+.homeAbout__homeInfo__home {
   display: inline-block;
   background-color: white;
   padding: 0.8rem;
 }
-.aboutUs__homeInfo__home a {
+.homeAbout__homeInfo__home a {
   font-family: "Archivo";
   color: #BEAD8E;
 }
-.aboutUs__homeInfo__home p {
+.homeAbout__homeInfo__home p {
   display: inline-block;
   font-family: "Archivo";
   color: black;
