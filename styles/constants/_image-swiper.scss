@@ -1,0 +1,35 @@
+.image-swiper {
+    margin: 3rem auto;
+
+    .swiper-slide {
+        align-items: center;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    .image-swiper-pagination {
+        position: initial;
+        text-align: center;
+        width: 100%;
+
+        .swiper-pagination-bullet {
+            background: #EDEDED;
+            opacity: 1;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+
+            &.swiper-pagination-bullet-active {
+                background: #BDAC8D;
+            }
+        }
+    }
+}

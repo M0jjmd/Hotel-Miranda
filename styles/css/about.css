@@ -213,6 +213,37 @@
   transition: background-color 0.3s ease;
 }
 
+.image-swiper {
+  margin: 3rem auto;
+}
+.image-swiper .swiper-slide {
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.image-swiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.image-swiper .image-swiper-pagination {
+  position: initial;
+  text-align: center;
+  width: 100%;
+}
+.image-swiper .image-swiper-pagination .swiper-pagination-bullet {
+  background: #EDEDED;
+  opacity: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+.image-swiper .image-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #BDAC8D;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -223,39 +254,39 @@ body {
   min-width: 320px;
 }
 
-.homeAbout {
+.home-about {
   background-color: #333333;
   margin: 0 auto;
   color: white;
 }
-.homeAbout__title {
+.home-about__title {
   margin: 0 1rem;
   padding: 3rem 0 2rem 0;
 }
-.homeAbout__title h2 {
+.home-about__title h2 {
   font-weight: 700;
   font-size: 1rem;
   font-family: "Archivo";
 }
-.homeAbout__title h3 {
+.home-about__title h3 {
   font-weight: 400;
   font-size: 3rem;
   font-family: "Old Standard TT";
 }
-.homeAbout__homeInfo {
+.home-about__homeInfo {
   text-align: right;
   padding-right: 1rem;
 }
-.homeAbout__homeInfo__home {
+.home-about__homeInfo__home {
   display: inline-block;
   background-color: white;
   padding: 0.8rem;
 }
-.homeAbout__homeInfo__home a {
+.home-about__homeInfo__home a {
   font-family: "Archivo";
   color: #BEAD8E;
 }
-.homeAbout__homeInfo__home p {
+.home-about__homeInfo__home p {
   display: inline-block;
   font-family: "Archivo";
   color: black;
@@ -364,18 +395,18 @@ body {
   font-size: 1.5rem;
 }
 
-.facilities-swiper {
+.simple-swiper {
   width: 90%;
   height: auto;
 }
-.facilities-swiper .swiper-slide {
+.simple-swiper .swiper-slide {
   position: relative;
   padding: 4rem 1rem;
   margin: 0 auto;
   background-color: #292929;
   width: 20rem;
 }
-.facilities-swiper .swiper-slide .swiper-background-number {
+.simple-swiper .swiper-slide .swiper-background-number {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 5rem;
@@ -385,43 +416,46 @@ body {
   color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-.facilities-swiper .swiper-slide .swiper-content {
+.simple-swiper .swiper-slide .swiper-content {
   position: relative;
   z-index: 2;
 }
-.facilities-swiper .swiper-slide .swiper-content img, .facilities-swiper .swiper-slide .swiper-content__description {
+.simple-swiper .swiper-slide .swiper-content img, .simple-swiper .swiper-slide .swiper-content__description {
   text-align: left;
   vertical-align: top;
   color: white;
 }
-.facilities-swiper .swiper-slide .swiper-content__description {
+.simple-swiper .swiper-slide .swiper-content img {
+  width: 4rem;
+}
+.simple-swiper .swiper-slide .swiper-content__description {
   white-space: normal;
 }
-.facilities-swiper .swiper-slide .swiper-content__description h2 {
+.simple-swiper .swiper-slide .swiper-content__description h2 {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 1.5rem;
 }
-.facilities-swiper .swiper-slide .swiper-content__description p {
+.simple-swiper .swiper-slide .swiper-content__description p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 0.8rem;
   color: #FFFFFF;
 }
-.facilities-swiper .swiper-pagination {
+.simple-swiper .swiper-pagination {
   position: initial;
   margin: 1rem 0;
   text-align: center;
   width: 100%;
 }
-.facilities-swiper .swiper-pagination .swiper-pagination-bullet {
+.simple-swiper .swiper-pagination .swiper-pagination-bullet {
   background: #BDAC8D;
   opacity: 1;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
 }
-.facilities-swiper .swiper-pagination .swiper-pagination-bullet-active {
+.simple-swiper .swiper-pagination .swiper-pagination-bullet-active {
   background: #ffffff;
 }
 
