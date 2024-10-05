@@ -18,8 +18,9 @@
 
 <body>
     <header class="header">
-        <div class="header__menu">
+        <div class="header__menu" id="header__menu">
         </div>
+
         <div class="header__title">
             <div class="header__title__logo">
                 <p>H</p>
@@ -30,10 +31,17 @@
                 <h2>MIRANDA</h2>
             </div>
         </div>
-        <div class="header__loginSearch">
-            <img src="../img/userLogo.png" alt="user-logo" class="header__loginSearch__imgs">
-            <img src="../img/searchLogo.png" alt="search-logo" class="header__loginSearch__imgs">
+        <div class="header__login-search">
+            <img src="../img/userLogo.png" alt="user-logo" class="header__login-search__imgs">
+            <img src="../img/searchLogo.png" alt="search-logo" class="header__login-search__imgs">
         </div>
+
+        <ul class="header__links" id="header__links">
+            <li><a href="../pages/about.html">About Us</a></li>
+            <li><a href="../pages/rooms.html">Rooms</a></li>
+            <li><a href="../pages/offers.html">Offers</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
     </header>
 
     <main>
@@ -44,7 +52,7 @@
             </div>
             <div class="homeBlog__homeInfo">
                 <div class="homeBlog__homeInfo__home">
-                    <a href="">Home</a>
+                    <a href="../pages/index.html">Home</a>
                     <p> | Blog</p>
                 </div>
             </div>
@@ -207,6 +215,7 @@
             <p>Terms of use | Privacy Environmental Policy</p>
         </div>
     </footer>
+    <script src="../scripts/openMenu.js"></script>
 </body>
 
 </html>

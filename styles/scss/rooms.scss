@@ -13,8 +13,9 @@ body {
 }
 
 .homeRooms {
+    text-align: center;
     background-color: #333333;
-    margin: 0 auto;
+    // margin: 0 auto;
     color: white;
 
     &__title {
@@ -58,19 +59,22 @@ body {
     }
 }
 
+.swiper-wrapper {
+    max-width: 2rem;
+    display: none;
+}
+
 .swiper-description {
-    background-color: #FFFFFF;
+    background-color: white;
     position: relative;
     overflow: visible;
 
     &__img {
+        display: inline-block;
         background-color: white;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-        position: absolute;
-        top: -50%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
+        position: relative;
+        bottom: 1.4rem;
 
         img {
             margin: 0.5rem 1rem;
@@ -78,7 +82,7 @@ body {
     }
 
     &__desc {
-        margin-top: 2rem;
+        margin-bottom: 2rem;
 
         &__title {
             font-family: "Old Standard TT";
@@ -124,10 +128,11 @@ body {
 .numbered-swiper {
     position: relative;
     margin: 3rem auto;
+    text-align: center;
 }
 
 .pagination-container {
-    position: relative; 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,10 +147,10 @@ body {
     cursor: pointer;
     padding: 0.5rem 0.7rem;
     font-size: 1rem;
-    margin: 0 7rem; 
+    margin: 0 7rem;
     z-index: 11;
-    position: relative; 
-    top: -0.35rem; 
+    position: relative;
+    top: -0.35rem;
 }
 
 .swiper-pagination {

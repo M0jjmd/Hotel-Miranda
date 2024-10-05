@@ -2,9 +2,24 @@
 .header {
   position: relative;
   width: 100%;
-  height: 3rem;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.header__links {
+  display: none;
+  list-style-type: none;
+  background-color: #FFFFFF;
+}
+.header__links li {
+  margin: 1rem;
+}
+.header__links li a {
+  text-decoration: none;
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111111;
 }
 .header__menu {
   display: inline-block;
@@ -50,13 +65,12 @@
   font-size: 1rem;
   font-weight: 400;
 }
-.header__loginSearch {
+.header__login-search {
   position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 0;
+  top: 0;
 }
-.header__loginSearch__imgs {
+.header__login-search__imgs {
   margin: 0.5rem;
 }
 
@@ -254,8 +268,8 @@ body {
 }
 
 .homeRooms {
+  text-align: center;
   background-color: #333333;
-  margin: 0 auto;
   color: white;
 }
 .homeRooms__title {
@@ -292,25 +306,28 @@ body {
   color: black;
 }
 
+.swiper-wrapper {
+  max-width: 2rem;
+  display: none;
+}
+
 .swiper-description {
-  background-color: #FFFFFF;
+  background-color: white;
   position: relative;
   overflow: visible;
 }
 .swiper-description__img {
+  display: inline-block;
   background-color: white;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
+  position: relative;
+  bottom: 1.4rem;
 }
 .swiper-description__img img {
   margin: 0.5rem 1rem;
 }
 .swiper-description__desc {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .swiper-description__desc__title {
   font-family: "Old Standard TT";
@@ -350,6 +367,7 @@ body {
 .numbered-swiper {
   position: relative;
   margin: 3rem auto;
+  text-align: center;
 }
 
 .pagination-container {

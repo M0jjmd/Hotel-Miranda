@@ -2,9 +2,24 @@
 .header {
   position: relative;
   width: 100%;
-  height: 3rem;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.header__links {
+  display: none;
+  list-style-type: none;
+  background-color: #FFFFFF;
+}
+.header__links li {
+  margin: 1rem;
+}
+.header__links li a {
+  text-decoration: none;
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111111;
 }
 .header__menu {
   display: inline-block;
@@ -50,13 +65,12 @@
   font-size: 1rem;
   font-weight: 400;
 }
-.header__loginSearch {
+.header__login-search {
   position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 0;
+  top: 0;
 }
-.header__loginSearch__imgs {
+.header__login-search__imgs {
   margin: 0.5rem;
 }
 
