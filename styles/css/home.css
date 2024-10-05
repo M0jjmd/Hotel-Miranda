@@ -170,7 +170,7 @@
   margin-top: 1rem;
   font-family: "Roboto";
   color: #777777;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .contactUs {
@@ -269,6 +269,52 @@
 
 .swiper-button-next {
   right: 1rem;
+}
+
+.swiper-description {
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: visible;
+}
+.swiper-description__img {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 1.4rem;
+}
+.swiper-description__img img {
+  margin: 0.5rem 1rem;
+}
+.swiper-description__desc__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.swiper-description__desc p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #777777;
+  margin-top: 1rem;
+}
+.swiper-description__desc__book-now {
+  margin: 1rem auto;
+}
+.swiper-description__desc__book-now__price {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #BEAD8E;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.swiper-description__desc__book-now__now {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #BDBDBD;
+  display: inline-block;
 }
 
 * {

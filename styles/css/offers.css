@@ -170,7 +170,7 @@
   margin-top: 1rem;
   font-family: "Roboto";
   color: #777777;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .contactUs {
@@ -211,6 +211,53 @@
   font-family: "Roboto";
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.home-local-page {
+  background-color: #333333;
+  margin: 0 auto;
+  color: white;
+}
+.home-local-page__title {
+  margin: 0 1rem;
+  padding: 3rem 0 2rem 0;
+}
+.home-local-page__title h2 {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Archivo";
+}
+.home-local-page__title h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: "Old Standard TT";
+}
+.home-local-page__home-info {
+  text-align: right;
+  padding-right: 1rem;
+}
+.home-local-page__home-info__home {
+  display: inline-block;
+  background-color: white;
+  padding: 0.8rem;
+}
+.home-local-page__home-info__home .home-page {
+  font-family: "Archivo";
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.home-local-page__home-info__home .separation {
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+}
+.home-local-page__home-info__home .home-title {
+  display: inline-block;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: #BEAD8E;
 }
 
 .button {
@@ -271,6 +318,52 @@
   right: 1rem;
 }
 
+.swiper-description {
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: visible;
+}
+.swiper-description__img {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 1.4rem;
+}
+.swiper-description__img img {
+  margin: 0.5rem 1rem;
+}
+.swiper-description__desc__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.swiper-description__desc p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #777777;
+  margin-top: 1rem;
+}
+.swiper-description__desc__book-now {
+  margin: 1rem auto;
+}
+.swiper-description__desc__book-now__price {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #BEAD8E;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.swiper-description__desc__book-now__now {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #BDBDBD;
+  display: inline-block;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -279,44 +372,6 @@
 
 body {
   min-width: 320px;
-}
-
-.homeOffers {
-  background-color: #333333;
-  margin: 0 auto;
-  color: white;
-}
-.homeOffers__title {
-  margin: 0 1rem;
-  padding: 3rem 0 2rem 0;
-}
-.homeOffers__title h2 {
-  font-weight: 700;
-  font-size: 1rem;
-  font-family: "Archivo";
-}
-.homeOffers__title h3 {
-  font-weight: 400;
-  font-size: 3rem;
-  font-family: "Old Standard TT";
-}
-.homeOffers__homeInfo {
-  text-align: right;
-  padding-right: 1rem;
-}
-.homeOffers__homeInfo__home {
-  display: inline-block;
-  background-color: white;
-  padding: 0.8rem;
-}
-.homeOffers__homeInfo__home a {
-  font-family: "Archivo";
-  color: #BEAD8E;
-}
-.homeOffers__homeInfo__home p {
-  display: inline-block;
-  font-family: "Archivo";
-  color: black;
 }
 
 .offer {
@@ -394,74 +449,26 @@ body {
   margin-top: 1rem;
 }
 
-.popularList {
+.popular-list {
   text-align: center;
   background-color: #222222;
   padding-bottom: 2rem;
 }
-.popularList__title {
+.popular-list__title {
   padding: 2rem;
 }
-.popularList__title h2 {
+.popular-list__title h2 {
   color: #BDAC8D;
   font-family: "Archivo";
   font-weight: 500;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
-.popularList__title h3 {
+.popular-list__title h3 {
   color: white;
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 1.5rem;
-}
-
-.swiper-description {
-  background-color: white;
-  position: relative;
-  overflow: visible;
-}
-.swiper-description__img {
-  display: inline-block;
-  background-color: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-  position: relative;
-  bottom: 1.4rem;
-}
-.swiper-description__img img {
-  margin: 0.5rem 1rem;
-}
-.swiper-description__desc {
-  margin-top: 2rem;
-}
-.swiper-description__desc__title {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-.swiper-description__desc p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: #777777;
-  margin-top: 1rem;
-}
-.swiper-description__desc__book-now {
-  margin: 1rem auto;
-}
-.swiper-description__desc__book-now__price {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 1rem;
-  color: #BEAD8E;
-  display: inline-block;
-}
-.swiper-description__desc__book-now__now {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 1rem;
-  color: #BDBDBD;
-  display: inline-block;
 }
 
 /*# sourceMappingURL=offers.css.map */

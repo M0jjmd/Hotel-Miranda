@@ -1,0 +1,55 @@
+.swiper-description {
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: visible;
+
+    &__img {
+        display: inline-block;
+        background-color: white;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        position: relative;
+        bottom: 1.4rem;
+
+
+        img {
+            margin: 0.5rem 1rem;
+        }
+    }
+
+    &__desc {
+        &__title {
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+
+        & p {
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #777777;
+            margin-top: 1rem;
+        }
+
+        &__book-now {
+            margin: 1rem auto;
+
+            &__price {
+                font-family: "Archivo";
+                font-weight: 700;
+                font-size: 1rem;
+                color: #BEAD8E;
+                display: inline-block;
+                margin-right: 1rem;
+            }
+
+            &__now {
+                font-family: "Archivo";
+                font-weight: 700;
+                font-size: 1rem;
+                color: #BDBDBD;
+                display: inline-block;
+            }
+        }
+    }
+}

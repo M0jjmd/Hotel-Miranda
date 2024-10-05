@@ -1,5 +1,6 @@
 @use '../components/header';
 @use '../components/footer';
+@use '../constants/home-about';
 @use '../constants/button';
 @use '../constants/image-swiper';
 
@@ -11,51 +12,6 @@
 
 body {
     min-width: 320px;
-}
-
-.home-about {
-    background-color: #333333;
-    margin: 0 auto;
-    color: white;
-
-    &__title {
-        margin: 0 1rem;
-        padding: 3rem 0 2rem 0;
-
-        & h2 {
-            font-weight: 700;
-            font-size: 1rem;
-            font-family: "Archivo";
-        }
-
-        & h3 {
-            font-weight: 400;
-            font-size: 3rem;
-            font-family: "Old Standard TT";
-        }
-    }
-
-    &__homeInfo {
-        text-align: right;
-        padding-right: 1rem;
-
-        &__home {
-            display: inline-block;
-            background-color: white;
-            padding: 0.8rem;
-
-            & a {
-                font-family: "Archivo";
-                color: #BEAD8E;
-            }
-
-            & p {
-                display: inline-block;
-                font-family: "Archivo";
-                color: black;
-            }
-        }
-    }
 }
 
 .video-show {
@@ -98,12 +54,13 @@ body {
 .image-container {
     width: 100%;
     text-align: center;
-}
+    margin: 3rem auto 0;
 
-.image-container img {
-    height: auto;
-    width: 90%;
-    margin-bottom: 10px;
+    img {
+        height: auto;
+
+        margin-bottom: 10px;
+    }
 }
 
 .hotel-restaurant {
@@ -207,7 +164,7 @@ body {
                 color: white;
             }
 
-            img{
+            img {
                 width: 4rem;
             }
 

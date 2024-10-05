@@ -1,0 +1,54 @@
+.home-local-page {
+    background-color: #333333;
+    margin: 0 auto;
+    color: white;
+
+    &__title {
+        margin: 0 1rem;
+        padding: 3rem 0 2rem 0;
+
+        & h2 {
+            font-weight: 700;
+            font-size: 1rem;
+            font-family: "Archivo";
+        }
+
+        & h3 {
+            font-weight: 400;
+            font-size: 3rem;
+            font-family: "Old Standard TT";
+        }
+    }
+
+    &__home-info {
+        text-align: right;
+        padding-right: 1rem;
+
+        &__home {
+            display: inline-block;
+            background-color: white;
+            padding: 0.8rem;
+
+            .home-page {
+                font-family: "Archivo";
+                color: black;
+                font-weight: 700;
+                font-size: 1rem;
+                text-decoration: none;
+            }
+
+            .separation {
+                display: inline-block;
+                color: black;
+                font-weight: 700;
+            }
+
+            .home-title {
+                display: inline-block;
+                font-family: "Archivo";
+                font-weight: 700;
+                color: #BEAD8E;
+            }
+        }
+    }
+}

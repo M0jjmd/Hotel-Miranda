@@ -1,5 +1,6 @@
 @use '../components/header';
 @use '../components/footer';
+@use '../constants/home-about';
 @use '../constants/button';
 
 * {
@@ -12,55 +13,10 @@ body {
     min-width: 320px;
 }
 
-.homeBlog {
-    background-color: #333333;
-    margin: 0 auto;
-    color: white;
-
-    &__title {
-        margin: 0 1rem;
-        padding: 3rem 0 2rem 0;
-
-        & h2 {
-            font-weight: 700;
-            font-size: 1rem;
-            font-family: "Archivo";
-        }
-
-        & h3 {
-            font-weight: 400;
-            font-size: 3rem;
-            font-family: "Old Standard TT";
-        }
-    }
-
-    &__homeInfo {
-        text-align: right;
-        padding-right: 1rem;
-
-        &__home {
-            display: inline-block;
-            background-color: white;
-            padding: 0.8rem;
-
-            & a {
-                font-family: "Archivo";
-                color: #BEAD8E;
-            }
-
-            & p {
-                display: inline-block;
-                font-family: "Archivo";
-                color: black;
-            }
-        }
-    }
-}
-
 .hotel-address {
     position: relative;
     padding: 2rem 1rem;
-    margin: 0 auto;
+    margin: 2rem auto;
     background-color: #FFFFFF;
     width: 20rem;
 
@@ -125,7 +81,7 @@ body {
         width: 100%;
         height: auto;
         border-radius: 8px;
-        margin-bottom: 1.3rem;
+        margin: 1.3rem auto;
     }
 
     &__form-container {
@@ -136,7 +92,7 @@ body {
 .form {
     &__field {
         position: relative;
-        margin-bottom: 1rem;
+        margin: 1rem auto;
 
         & input {
             width: 100%;

@@ -170,7 +170,7 @@
   margin-top: 1rem;
   font-family: "Roboto";
   color: #777777;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .contactUs {
@@ -211,6 +211,53 @@
   font-family: "Roboto";
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.home-local-page {
+  background-color: #333333;
+  margin: 0 auto;
+  color: white;
+}
+.home-local-page__title {
+  margin: 0 1rem;
+  padding: 3rem 0 2rem 0;
+}
+.home-local-page__title h2 {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Archivo";
+}
+.home-local-page__title h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: "Old Standard TT";
+}
+.home-local-page__home-info {
+  text-align: right;
+  padding-right: 1rem;
+}
+.home-local-page__home-info__home {
+  display: inline-block;
+  background-color: white;
+  padding: 0.8rem;
+}
+.home-local-page__home-info__home .home-page {
+  font-family: "Archivo";
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.home-local-page__home-info__home .separation {
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+}
+.home-local-page__home-info__home .home-title {
+  display: inline-block;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: #BEAD8E;
 }
 
 .swiper {
@@ -257,62 +304,8 @@
   right: 1rem;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-width: 320px;
-}
-
-.homeRooms {
-  text-align: center;
-  background-color: #333333;
-  color: white;
-}
-.homeRooms__title {
-  margin: 0 1rem;
-  padding: 3rem 0 2rem 0;
-}
-.homeRooms__title h2 {
-  font-weight: 700;
-  font-size: 0.9rem;
-  font-family: "Archivo";
-}
-.homeRooms__title h3 {
-  font-weight: 400;
-  font-size: 3rem;
-  font-family: "Old Standard TT";
-  width: 60%;
-}
-.homeRooms__homeInfo {
-  text-align: right;
-  padding-right: 1rem;
-}
-.homeRooms__homeInfo__home {
-  display: inline-block;
-  background-color: white;
-  padding: 0.8rem;
-}
-.homeRooms__homeInfo__home a {
-  font-family: "Archivo";
-  color: #BEAD8E;
-}
-.homeRooms__homeInfo__home p {
-  display: inline-block;
-  font-family: "Archivo";
-  color: black;
-}
-
-.swiper-wrapper {
-  max-width: 2rem;
-  display: none;
-}
-
 .swiper-description {
-  background-color: white;
+  background-color: #FFFFFF;
   position: relative;
   overflow: visible;
 }
@@ -325,9 +318,6 @@ body {
 }
 .swiper-description__img img {
   margin: 0.5rem 1rem;
-}
-.swiper-description__desc {
-  margin-bottom: 2rem;
 }
 .swiper-description__desc__title {
   font-family: "Old Standard TT";
@@ -358,6 +348,21 @@ body {
   font-size: 1rem;
   color: #BDBDBD;
   display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.swiper-wrapper {
+  max-width: 2rem;
+  display: none;
 }
 
 .swiper-wrapper {

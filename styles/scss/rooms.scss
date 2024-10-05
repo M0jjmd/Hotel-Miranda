@@ -1,6 +1,8 @@
 @use '../components/header';
 @use '../components/footer';
+@use '../constants/home-about';
 @use '../constants/swiper';
+@use '../constants/swiper-description';
 
 * {
     box-sizing: border-box;
@@ -12,113 +14,9 @@ body {
     min-width: 320px;
 }
 
-.homeRooms {
-    text-align: center;
-    background-color: #333333;
-    // margin: 0 auto;
-    color: white;
-
-    &__title {
-        margin: 0 1rem;
-        padding: 3rem 0 2rem 0;
-
-        & h2 {
-            font-weight: 700;
-            font-size: 0.9rem;
-            font-family: "Archivo";
-        }
-
-        & h3 {
-            font-weight: 400;
-            font-size: 3rem;
-            font-family: "Old Standard TT";
-            width: 60%;
-        }
-    }
-
-    &__homeInfo {
-        text-align: right;
-        padding-right: 1rem;
-
-        &__home {
-            display: inline-block;
-            background-color: white;
-            padding: 0.8rem;
-
-            & a {
-                font-family: "Archivo";
-                color: #BEAD8E;
-            }
-
-            & p {
-                display: inline-block;
-                font-family: "Archivo";
-                color: black;
-            }
-        }
-    }
-}
-
 .swiper-wrapper {
     max-width: 2rem;
     display: none;
-}
-
-.swiper-description {
-    background-color: white;
-    position: relative;
-    overflow: visible;
-
-    &__img {
-        display: inline-block;
-        background-color: white;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-        position: relative;
-        bottom: 1.4rem;
-
-        img {
-            margin: 0.5rem 1rem;
-        }
-    }
-
-    &__desc {
-        margin-bottom: 2rem;
-
-        &__title {
-            font-family: "Old Standard TT";
-            font-weight: 400;
-            font-size: 1.5rem;
-        }
-
-        & p {
-            font-family: "Roboto";
-            font-weight: 400;
-            font-size: 0.8rem;
-            color: #777777;
-            margin-top: 1rem;
-        }
-
-        &__book-now {
-            margin: 1rem auto;
-
-            &__price {
-                font-family: "Archivo";
-                font-weight: 700;
-                font-size: 1rem;
-                color: #BEAD8E;
-                display: inline-block;
-                margin-right: 1rem;
-            }
-
-            &__now {
-                font-family: "Archivo";
-                font-weight: 700;
-                font-size: 1rem;
-                color: #BDBDBD;
-                display: inline-block;
-            }
-        }
-    }
 }
 
 .swiper-wrapper {
