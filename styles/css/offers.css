@@ -356,6 +356,9 @@
   display: inline-block;
   margin-right: 1rem;
 }
+.swiper-description__desc__book-now__custom-line {
+  display: none;
+}
 .swiper-description__desc__book-now__now {
   font-family: "Archivo";
   font-weight: 700;
@@ -376,6 +379,7 @@ body {
 
 .offer {
   width: 90%;
+  max-width: 68rem;
   margin: 2rem auto;
   padding: 1rem;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12), 0 8px 10px rgba(0, 0, 0, 0.08);
@@ -390,6 +394,7 @@ body {
   margin: 0 auto;
 }
 .offer__image__text {
+  display: initial;
   font-family: "Archivo";
   position: absolute;
   bottom: 10px;
@@ -414,35 +419,55 @@ body {
 .offer__description {
   margin: 1rem 0;
 }
-.offer__description__name {
+.offer__description__title-price {
+  display: none;
+}
+.offer__description__titl__name {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 1rem;
   color: #777777;
 }
-.offer__description__fullName {
+.offer__description__titl__fullName {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 2.5rem;
   margin: 1rem 0;
 }
-.offer__description__description {
+.offer__description__titl__description {
   font-family: "Roboto";
   font-weight: 400;
   color: #777777;
 }
-.offer__items__especificaciones {
+.offer__description__titl__oldPrice {
+  text-decoration: line-through;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #BEAD8E;
+}
+.offer__description__titl__newPrice {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #DE5777;
+}
+.offer__items__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #777777;
+}
+.offer__items__specs {
+  margin-top: 2rem;
   display: inline-block;
   list-style-type: none;
   width: 45%;
 }
-.offer__items__especificaciones li {
+.offer__items__specs li {
   font-family: "Roboto";
   font-weight: 500;
   color: #777777;
   margin-bottom: 1rem;
 }
-.offer__items__especificaciones li img {
+.offer__items__specs li img {
   margin-right: 0.5rem;
 }
 .offer__items__book {
@@ -469,6 +494,75 @@ body {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.popular-room-gallery {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 68rem;
+  }
+  .offer__image__text {
+    display: none;
+  }
+  .offer__description {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .offer__description__title {
+    padding-top: 1rem;
+  }
+  .offer__description__title-price {
+    padding: 1rem;
+    display: initial;
+  }
+  .offer__items {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .offer__items__text {
+    width: 26rem;
+  }
+  .offer__items__specs {
+    margin-top: 0rem;
+    margin-right: 2rem;
+    min-width: 8rem;
+  }
+  .caption {
+    position: relative;
+    bottom: 4rem;
+    z-index: 1;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .caption-line {
+    border: none;
+    height: 0.5rem;
+    background-color: #BDAC8D;
+  }
+  .popular-room-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .popular-room-gallery__item {
+    width: 18rem;
+  }
+  .arrows-swiper {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=offers.css.map */
