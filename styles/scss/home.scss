@@ -21,7 +21,7 @@ body {
     &__title {
         width: 90%;
         margin: 0 auto;
-        padding: 3rem 0 2rem 0;
+        padding: 3rem 0 1.5rem 0;
 
         & h2 {
             font-weight: 700;
@@ -69,6 +69,8 @@ body {
 
         &__date {
             overflow: hidden;
+            max-width: 25rem;
+            min-width: 18rem;
 
             label {
                 display: block;
@@ -145,19 +147,21 @@ body {
 .about-us {
     background-color: #F9F9F9;
 
+    &__title {
+        width: 90%;
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #777777;
+        margin: 0 auto;
+        margin-top: 5rem;
+        padding-top: 1rem;
+    }
+
     &__description {
         width: 90%;
-        margin: 2rem auto 0 auto;
+        margin: 1rem auto 0 auto;
         padding: 0.5rem 0;
-
-        &__title {
-            font-family: 'Archivo';
-            font-weight: 700;
-            font-size: 0.8rem;
-            color: #777777;
-            margin: 1.5rem auto;
-            margin-top: 5rem;
-        }
 
         h2 {
             font-family: 'Old Standard TT';
@@ -186,7 +190,7 @@ body {
 
     &__container {
         width: 80%;
-        max-width: 30rem;
+        max-width: 35rem;
         margin: 0 auto;
         position: relative;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12),
@@ -227,37 +231,42 @@ body {
 
 .luxury-room {
     text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 30rem;
-    background-color: #222222;
-
-    &__luxury-room-img {
-        width: 100%;
-    }
 
     &__container {
-        margin: 3rem auto;
-        padding-bottom: 4rem;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 35rem;
+        background-color: #222222;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12),
+            0 0px 0px rgba(0, 0, 0, 0.08);
 
-        &__logo {
-            display: block;
-            margin: 0 auto 1.5rem;
+        &__img {
+            width: 100%;
         }
 
-        &__title {
-            font-family: 'Old Standard TT';
-            font-weight: 400;
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            color: white;
-        }
+        &__desc {
+            margin: 3rem auto;
+            padding-bottom: 4rem;
 
-        &__text {
-            font-family: 'Roboto';
-            font-weight: 400;
-            font-size: 0.9rem;
-            color: white;
+            &__logo {
+                display: block;
+                margin: 0 auto 1.5rem;
+            }
+
+            &__title {
+                font-family: 'Old Standard TT';
+                font-weight: 400;
+                font-size: 2.2rem;
+                margin-bottom: 0.5rem;
+                color: white;
+            }
+
+            &__text {
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 0.9rem;
+                color: white;
+            }
         }
     }
 }
@@ -305,7 +314,7 @@ body {
 .swiper-description {
     margin: 0 auto;
     position: relative;
-    bottom: 1rem;
+    bottom: 3rem;
     width: 90%;
     max-width: 30rem;
     background-color: white;
@@ -356,30 +365,34 @@ body {
 
     &__container {
         width: 90%;
-        margin: 2rem auto 0;
-        padding: 0.5rem 0;
 
-        &__title {
-            font-family: 'Archivo';
-            font-weight: 700;
-            font-size: 0.8rem;
-            color: #BDAC8D;
-            margin: 3rem auto 1.5rem;
-        }
+        &__intro {
+            &__cont {
+                max-width: 50rem;
 
-        h2 {
-            font-family: 'Old Standard TT';
-            font-weight: 400;
-            font-size: 2.5rem;
-            color: #FFFFFF;
-        }
+                &__title {
+                    font-family: 'Archivo';
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                    color: #BDAC8D;
+                    margin: 3rem auto 1.5rem;
+                }
 
-        &__text {
-            font-family: 'Archivo';
-            font-weight: 400;
-            font-size: 0.9rem;
-            color: #C2C2C2;
-            margin: 1rem auto 2rem;
+                h2 {
+                    font-family: 'Old Standard TT';
+                    font-weight: 400;
+                    font-size: 2.5rem;
+                    color: #FFFFFF;
+                }
+
+                &__text {
+                    font-family: 'Archivo';
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                    color: #C2C2C2;
+                    margin: 1rem auto 2rem;
+                }
+            }
         }
     }
 
@@ -405,30 +418,6 @@ body {
         width: 100%;
         height: 100%;
         border: 0;
-    }
-}
-
-.facilities {
-    padding-bottom: 2rem;
-
-    &__title {
-        padding: 2rem;
-        text-align: center;
-
-        h2 {
-            font-family: "Archivo";
-            font-weight: 700;
-            font-size: 0.8rem;
-            margin: 1rem auto;
-            color: #777777;
-        }
-
-        h3 {
-            font-family: "Old Standard TT";
-            font-weight: 400;
-            font-size: 2.2rem;
-            margin: 2rem auto;
-        }
     }
 }
 
@@ -505,6 +494,34 @@ body {
     }
 }
 
+.facilities {
+    padding-bottom: 2rem;
+
+    &__title {
+        padding: 2rem;
+        text-align: center;
+
+        h2 {
+            font-family: "Archivo";
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin: 1rem auto;
+            color: #777777;
+        }
+
+        h3 {
+            font-family: "Old Standard TT";
+            font-weight: 400;
+            font-size: 2.2rem;
+            margin: 2rem auto;
+        }
+    }
+}
+
+.facilities__gallery {
+    display: none;
+}
+
 .menu-img-container {
     text-align: right;
     margin-bottom: 2rem;
@@ -558,6 +575,10 @@ body {
             margin: 5px 0;
         }
     }
+}
+
+.food-gallery {
+    display: none;
 }
 
 .food-swiper-buttons-next,
@@ -662,4 +683,255 @@ body {
         }
     }
 
+}
+
+@media only screen and (min-width: 1000px) {
+    .date-select {
+        &__availability {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__date {
+                margin-right: 20px;
+            }
+
+            &__button {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .page-info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .about-us {
+        order: 3;
+        height: 25rem;
+        width: 40rem;
+        align-self: flex-end;
+
+        &__title {
+            width: 100%;
+            background-color: white;
+            margin: 0;
+            padding: 0rem 0rem 1rem;
+        }
+
+        &__description {
+            max-width: none;
+            margin: 0;
+            background-color: #F9F9F9;
+
+            h2,
+            p {
+                width: 20rem;
+            }
+
+            p {
+                margin: 1rem 0;
+            }
+        }
+
+        button {
+            margin-bottom: 0;
+        }
+    }
+
+    .team-component {
+        order: 1;
+        max-width: 20rem;
+        text-align: center;
+        margin-top: 2rem;
+
+        &__container {
+            display: flex;
+            flex-direction: column-reverse;
+            box-shadow: none;
+
+            &__strong-team-img {
+                width: 100%;
+                position: initial;
+                margin-top: 1rem;
+            }
+
+            &__desc {
+                position: initial;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12),
+                    0 0px 0px rgba(0, 0, 0, 0.08);
+                padding: 2rem;
+            }
+        }
+    }
+
+    .luxury-room {
+        order: 2;
+        max-width: 20rem;
+        text-align: center;
+        margin-top: 2rem;
+
+        &__container {
+            background-color: white;
+            box-shadow: none;
+
+            &__desc {
+                margin: 2rem 0rem;
+                padding-bottom: 0;
+                background-color: #222222;
+                padding: 2rem;
+            }
+        }
+    }
+
+    .arrows-swiper {
+        .swiper-slide {
+            visibility: visible;
+            padding: 1rem;
+            width: 80%;
+            transition: transform 0.3s ease;
+        }
+
+        .swiper-slide {
+            width: 90%;
+        }
+    }
+
+    .intro-video {
+        background: linear-gradient(to right, #222222 70%, #AD9D82 30%);
+
+        &__container {
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            &__intro {
+                display: flex;
+                align-items: center;
+                height: 54rem;
+
+                &__cont {
+                    margin: 0rem 0rem 10rem 15rem;
+
+                    &__text {
+                        margin: 2rem auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .iframe-container {
+        position: relative;
+        top: 12rem;
+        width: 50%;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    #video-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        border: 0;
+    }
+
+    .simple-swiper {
+        display: none;
+    }
+
+    .facilities__gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        justify-items: center;
+
+        &__page {
+            position: relative;
+            padding: 4rem 1rem;
+            margin: 0 auto;
+            min-height: 17rem;
+            width: 20rem;
+
+            &__number {
+                font-family: "Roboto";
+                font-weight: 700;
+                font-size: 5rem;
+                position: absolute;
+                right: 1rem;
+                top: 0;
+                color: #2222220A;
+                z-index: 1;
+            }
+        }
+    }
+
+    .gallery-content {
+        position: relative;
+        z-index: 2;
+
+        img,
+        &__description {
+            text-align: left;
+            vertical-align: top;
+            color: white;
+        }
+
+        &__description {
+            white-space: normal;
+
+            h2 {
+                font-family: "Old Standard TT";
+                font-weight: 400;
+                font-size: 1.5rem;
+                color: black;
+            }
+
+            p {
+                font-family: "Archivo";
+                font-weight: 400;
+                font-size: 0.8rem;
+                color: #777777;
+            }
+        }
+    }
+
+    .food-swiper {
+        width: 70%;
+    }
+
+    .food-item {
+        &:hover {
+            background-color: #222222;
+            cursor: pointer;
+
+            .food-item__desc__name,
+            .food-item__desc__description {
+                color: white;
+            }
+        }
+    }
+
+    .image-swiper {
+        display: none;
+    }
+
+    .food-gallery {
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem auto;
+        &__img {
+            width: 23rem;
+        }
+    }
+
+    .web-info {
+        display: flex;
+    }
 }

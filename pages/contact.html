@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="hotel-address-container">
             <div class="hotel-address">
                 <div class="hotel-address__background-number">01</div>
                 <div class="hotel-address__content">
@@ -97,29 +97,29 @@
         <section class="contact">
             <img src="../img/hotel.jpeg" alt="" class="contact__img">
             <div class="contact__form-container">
-                <form class="from">
+                <form class="contact__form-container__form">
                     <div class="form__field">
                         <img src="../img/fullName.png" alt="Name Icon" class="form__field__icon">
-                        <input type="text" placeholder="Your full name" required>
+                        <input type="text" placeholder="Your full name" class="form__field__input" required>
                     </div>
                     <div class="form__field">
                         <img src="../img/phoneNumber.png" alt="Phone Icon" class="form__field__icon">
-                        <input type="tel" placeholder="Add phone number" required>
+                        <input type="tel" placeholder="Add phone number" class="form__field__input" required>
                     </div>
                     <div class="form__field">
                         <img src="../img/iconEmail.png" alt="Email Icon" class="form__field__icon">
-                        <input type="email" placeholder="Enter email address" required>
+                        <input type="email" placeholder="Enter email address" class="form__field__input" required>
                     </div>
                     <div class="form__field">
                         <img src="../img/subject.png" alt="Subject Icon" class="form__field__icon">
-                        <input type="text" placeholder="Enter subject" required>
+                        <input type="text" placeholder="Enter subject" class="form__field__input" required>
                     </div>
-                    <div class="form__field">
-                        <img src="../img/enterMessage.png" alt="Message Icon" class="form__field__messageIcon">
-                        <textarea placeholder="Enter message" required></textarea>
-                    </div>
-                    <button type="submit" class="form__button button">SEND</button>
                 </form>
+                <div class="form__field form-text-field">
+                    <img src="../img/enterMessage.png" alt="Message Icon" class="form__field__messageIcon">
+                    <textarea placeholder="Enter message" class="form__field__input" required></textarea>
+                </div>
+                <button type="submit" class="form__button button">SEND</button>
             </div>
         </section>
 

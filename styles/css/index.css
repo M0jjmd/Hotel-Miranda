@@ -309,6 +309,9 @@
   display: inline-block;
   margin-right: 1rem;
 }
+.swiper-description__desc__book-now__custom-line {
+  display: none;
+}
 .swiper-description__desc__book-now__now {
   font-family: "Archivo";
   font-weight: 700;
@@ -334,7 +337,7 @@ body {
 .home-detail__title {
   width: 90%;
   margin: 0 auto;
-  padding: 3rem 0 2rem 0;
+  padding: 3rem 0 1.5rem 0;
 }
 .home-detail__title h2 {
   font-weight: 700;
@@ -376,6 +379,8 @@ body {
 }
 .date-select__availability__date {
   overflow: hidden;
+  max-width: 25rem;
+  min-width: 18rem;
 }
 .date-select__availability__date label {
   display: block;
@@ -441,18 +446,20 @@ body {
 .about-us {
   background-color: #F9F9F9;
 }
-.about-us__description {
+.about-us__title {
   width: 90%;
-  margin: 2rem auto 0 auto;
-  padding: 0.5rem 0;
-}
-.about-us__description__title {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.8rem;
   color: #777777;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   margin-top: 5rem;
+  padding-top: 1rem;
+}
+.about-us__description {
+  width: 90%;
+  margin: 1rem auto 0 auto;
+  padding: 0.5rem 0;
 }
 .about-us__description h2 {
   font-family: "Old Standard TT";
@@ -477,7 +484,7 @@ body {
 }
 .team-component__container {
   width: 80%;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: 0 auto;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.08);
@@ -510,30 +517,33 @@ body {
 
 .luxury-room {
   text-align: center;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 30rem;
-  background-color: #222222;
-}
-.luxury-room__luxury-room-img {
-  width: 100%;
 }
 .luxury-room__container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 35rem;
+  background-color: #222222;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.08);
+}
+.luxury-room__container__img {
+  width: 100%;
+}
+.luxury-room__container__desc {
   margin: 3rem auto;
   padding-bottom: 4rem;
 }
-.luxury-room__container__logo {
+.luxury-room__container__desc__logo {
   display: block;
   margin: 0 auto 1.5rem;
 }
-.luxury-room__container__title {
+.luxury-room__container__desc__title {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
   color: white;
 }
-.luxury-room__container__text {
+.luxury-room__container__desc__text {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 0.9rem;
@@ -579,7 +589,7 @@ body {
 .swiper-description {
   margin: 0 auto;
   position: relative;
-  bottom: 1rem;
+  bottom: 3rem;
   width: 90%;
   max-width: 30rem;
   background-color: white;
@@ -624,23 +634,24 @@ body {
 }
 .intro-video__container {
   width: 90%;
-  margin: 2rem auto 0;
-  padding: 0.5rem 0;
 }
-.intro-video__container__title {
+.intro-video__container__intro__cont {
+  max-width: 50rem;
+}
+.intro-video__container__intro__cont__title {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.8rem;
   color: #BDAC8D;
   margin: 3rem auto 1.5rem;
 }
-.intro-video__container h2 {
+.intro-video__container__intro__cont h2 {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 2.5rem;
   color: #FFFFFF;
 }
-.intro-video__container__text {
+.intro-video__container__intro__cont__text {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 0.9rem;
@@ -668,27 +679,6 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.facilities {
-  padding-bottom: 2rem;
-}
-.facilities__title {
-  padding: 2rem;
-  text-align: center;
-}
-.facilities__title h2 {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.8rem;
-  margin: 1rem auto;
-  color: #777777;
-}
-.facilities__title h3 {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 2.2rem;
-  margin: 2rem auto;
 }
 
 .simple-swiper {
@@ -752,6 +742,31 @@ body {
   background: #EDEDED;
 }
 
+.facilities {
+  padding-bottom: 2rem;
+}
+.facilities__title {
+  padding: 2rem;
+  text-align: center;
+}
+.facilities__title h2 {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 1rem auto;
+  color: #777777;
+}
+.facilities__title h3 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 2rem auto;
+}
+
+.facilities__gallery {
+  display: none;
+}
+
 .menu-img-container {
   text-align: right;
   margin-bottom: 2rem;
@@ -801,6 +816,10 @@ body {
   font-weight: 400;
   font-size: 0.85rem;
   margin: 5px 0;
+}
+
+.food-gallery {
+  display: none;
 }
 
 .food-swiper-buttons-next,
@@ -898,4 +917,207 @@ body {
   font-size: 0.8rem;
 }
 
-/*# sourceMappingURL=home.css.map */
+@media only screen and (min-width: 1000px) {
+  .date-select__availability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .date-select__availability__date {
+    margin-right: 20px;
+  }
+  .date-select__availability__button {
+    margin-left: auto;
+  }
+  .page-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .about-us {
+    order: 3;
+    height: 25rem;
+    width: 40rem;
+    align-self: flex-end;
+  }
+  .about-us__title {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0rem 0rem 1rem;
+  }
+  .about-us__description {
+    max-width: none;
+    margin: 0;
+    background-color: #F9F9F9;
+  }
+  .about-us__description h2,
+  .about-us__description p {
+    width: 20rem;
+  }
+  .about-us__description p {
+    margin: 1rem 0;
+  }
+  .about-us button {
+    margin-bottom: 0;
+  }
+  .team-component {
+    order: 1;
+    max-width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .team-component__container {
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow: none;
+  }
+  .team-component__container__strong-team-img {
+    width: 100%;
+    position: initial;
+    margin-top: 1rem;
+  }
+  .team-component__container__desc {
+    position: initial;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+  }
+  .luxury-room {
+    order: 2;
+    max-width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .luxury-room__container {
+    background-color: white;
+    box-shadow: none;
+  }
+  .luxury-room__container__desc {
+    margin: 2rem 0rem;
+    padding-bottom: 0;
+    background-color: #222222;
+    padding: 2rem;
+  }
+  .arrows-swiper .swiper-slide {
+    visibility: visible;
+    padding: 1rem;
+    width: 80%;
+    transition: transform 0.3s ease;
+  }
+  .arrows-swiper .swiper-slide {
+    width: 90%;
+  }
+  .intro-video {
+    background: linear-gradient(to right, #222222 70%, #AD9D82 30%);
+  }
+  .intro-video__container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .intro-video__container__intro {
+    display: flex;
+    align-items: center;
+    height: 54rem;
+  }
+  .intro-video__container__intro__cont {
+    margin: 0rem 0rem 10rem 15rem;
+  }
+  .intro-video__container__intro__cont__text {
+    margin: 2rem auto;
+  }
+  .iframe-container {
+    position: relative;
+    top: 12rem;
+    width: 50%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+  #video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border: 0;
+  }
+  .simple-swiper {
+    display: none;
+  }
+  .facilities__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    justify-items: center;
+  }
+  .facilities__gallery__page {
+    position: relative;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    min-height: 17rem;
+    width: 20rem;
+  }
+  .facilities__gallery__page__number {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    color: rgba(34, 34, 34, 0.0392156863);
+    z-index: 1;
+  }
+  .gallery-content {
+    position: relative;
+    z-index: 2;
+  }
+  .gallery-content img, .gallery-content__description {
+    text-align: left;
+    vertical-align: top;
+    color: white;
+  }
+  .gallery-content__description {
+    white-space: normal;
+  }
+  .gallery-content__description h2 {
+    font-family: "Old Standard TT";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+  }
+  .gallery-content__description p {
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #777777;
+  }
+  .food-swiper {
+    width: 70%;
+  }
+  .food-item:hover {
+    background-color: #222222;
+    cursor: pointer;
+  }
+  .food-item:hover .food-item__desc__name,
+  .food-item:hover .food-item__desc__description {
+    color: white;
+  }
+  .image-swiper {
+    display: none;
+  }
+  .food-gallery {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+  }
+  .food-gallery__img {
+    width: 23rem;
+  }
+  .web-info {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

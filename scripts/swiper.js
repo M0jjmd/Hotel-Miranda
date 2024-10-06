@@ -2,6 +2,20 @@ const swiper = new Swiper('.arrows-swiper', {
     direction: 'horizontal',
     loop: true,
 
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            centeredSlides: false,
+        },
+
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: true,
+        }
+    },
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

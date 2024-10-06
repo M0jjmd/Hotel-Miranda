@@ -90,17 +90,20 @@ body {
 }
 
 .form {
+    display: block;
+
     &__field {
         position: relative;
         margin: 1rem auto;
+        max-width: 30rem;
 
         & input {
-            width: 100%;
-            background-color: #F8F8F8;
             padding: 1rem 0.5rem 1rem 2rem;
+            background-color: #F8F8F8;
             border: none;
             font-family: "Roboto";
             font-size: 1rem;
+            width: 100%;
         }
 
         & textarea {
@@ -110,6 +113,7 @@ body {
             border: none;
             font-family: "Roboto";
             font-size: 1rem;
+            resize: none;
         }
 
         &__icon {
@@ -128,11 +132,60 @@ body {
     }
 
     &__button {
-
         padding: 1rem 5rem;
+    }
+}
 
-        &:hover {
-            background-color: #0056b3;
+@media only screen and (min-width: 1000px) {
+    .hotel-address-container {
+        display: flex;
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+    .contact {
+        width: 80%;
+
+        &__form-container {
+            margin: 0 auto;
+
+            &__form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+                gap: 1rem;
+
+                .form__field {
+                    display: flex;
+                    align-items: center;
+                    max-width: none;
+                    width: 100%;
+
+                    &__icon {
+                        margin-right: 1rem;
+                    }
+
+                    &__input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .form-text-field {
+                margin-top: 1rem;
+                max-width: none;
+                width: 100%;
+
+                .form__field__messageIcon {
+                    margin-right: 1rem;
+                }
+
+                textarea {
+                    width: 100%;
+                    resize: none;
+                    padding: 0.5rem 0.5rem 5rem 2rem;
+                }
+            }
         }
     }
 }
