@@ -1045,6 +1045,9 @@ body {
     display: none;
   }
   .facilities__gallery {
+    width: 90%;
+    max-width: 60rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -1056,7 +1059,7 @@ body {
     padding: 4rem 1rem;
     margin: 0 auto;
     min-height: 17rem;
-    width: 20rem;
+    width: 18rem;
   }
   .facilities__gallery__page__number {
     font-family: "Roboto";
@@ -1107,13 +1110,12 @@ body {
     display: none;
   }
   .food-gallery {
-    width: 75%;
     display: flex;
     justify-content: space-around;
     margin: 2rem auto;
   }
   .food-gallery__img {
-    width: 23rem;
+    width: 16rem;
   }
   .web-info {
     display: flex;

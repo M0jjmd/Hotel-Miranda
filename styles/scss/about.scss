@@ -15,7 +15,12 @@ body {
 }
 
 .video-show {
-    margin: 3rem 0;
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+.bbq-img {
+    display: none;
 }
 
 .iframe-container {
@@ -131,8 +136,8 @@ body {
 }
 
 .simple-swiper {
-    width: 90%;
     height: auto;
+    max-width: 25rem;
 
 
     .swiper-slide {
@@ -149,7 +154,7 @@ body {
             position: absolute;
             right: 0;
             top: 0;
-            color: rgba(0, 0, 0, 0.1);
+            color: #222222;
             z-index: 1;
         }
 
@@ -205,6 +210,10 @@ body {
             background: #ffffff;
         }
     }
+}
+
+.facilities__gallery {
+    display: none;
 }
 
 .fun-facts {
@@ -312,6 +321,117 @@ body {
         .swiper-pagination-bullet-active {
             background-color: #bdac8d;
             opacity: 1;
+        }
+    }
+}
+
+.hotel-images {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .about {
+        max-width: 64rem;
+        margin: 0 auto;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12),
+            0 8px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .bbq-img {
+        display: initial;
+    }
+
+    #facilitie-swiper {
+        display: none;
+    }
+
+    .facilities__gallery {
+        width: 90%;
+        max-width: 60rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        justify-items: center;
+
+        &__page {
+            position: relative;
+            padding: 4rem 1rem;
+            margin: 0 auto;
+            min-height: 17rem;
+            width: 18rem;
+            background-color: #292929;
+
+            &__number {
+                font-family: "Roboto";
+                font-weight: 700;
+                font-size: 5rem;
+                position: absolute;
+                right: 1rem;
+                top: 0;
+                color: #222222;
+                z-index: 1;
+            }
+        }
+    }
+
+    .gallery-content {
+        position: relative;
+        z-index: 2;
+
+        img,
+        &__description {
+            text-align: left;
+            vertical-align: top;
+            color: white;
+        }
+
+        &__description {
+            white-space: normal;
+
+            h2 {
+                font-family: "Old Standard TT";
+                font-weight: 400;
+                font-size: 1.5rem;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: "Archivo";
+                font-weight: 400;
+                font-size: 0.8rem;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .fun-facts-container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fun-facts {
+
+        &__blocks {
+            max-width: 20rem;
+        }
+    }
+
+    #hotl-imgs {
+        display: none;
+    }
+
+    .hotel-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            width: 45%;
         }
     }
 }

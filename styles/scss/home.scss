@@ -845,6 +845,9 @@ body {
     }
 
     .facilities__gallery {
+        width: 90%;
+        max-width: 60rem;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
@@ -856,7 +859,7 @@ body {
             padding: 4rem 1rem;
             margin: 0 auto;
             min-height: 17rem;
-            width: 20rem;
+            width: 18rem;
 
             &__number {
                 font-family: "Roboto";
@@ -922,12 +925,12 @@ body {
     }
 
     .food-gallery {
-        width: 75%;
         display: flex;
         justify-content: space-around;
         margin: 2rem auto;
+
         &__img {
-            width: 23rem;
+            width: 16rem;
         }
     }
 

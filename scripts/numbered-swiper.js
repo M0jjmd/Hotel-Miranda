@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const elementDiv = document.createElement('div')
             elementDiv.classList.add('swiper-item')
             elementDiv.innerHTML = `
-                <img src="../img/luxuryRoom.jpeg" alt="luxuryRoom-${elementIndex}" class="swiper-img" />
+                <img src="../img/minDuplexRoom.avif" alt="luxuryRoom-${elementIndex}" class="swiper-img" />
                 <div class="swiper-description">
                     <div class="swiper-img_container">
                         <div class="swiper-description__img">
