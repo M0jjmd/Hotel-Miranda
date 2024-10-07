@@ -1110,9 +1110,13 @@ body {
     display: none;
   }
   .food-gallery {
+    max-width: 70%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
   }
   .food-gallery__img {
     width: 20.5rem;
