@@ -276,6 +276,40 @@
   margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+  }
+  .copyright p {
+    margin-bottom: 0rem;
+    padding: 1rem;
+  }
+  .intro {
+    width: 25%;
+    min-width: 17rem;
+  }
+  .services {
+    width: 30%;
+    padding: 1rem;
+    min-width: 21rem;
+  }
+  .services__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactUs {
+    width: 25%;
+    min-width: 17rem;
+  }
+}
 .button {
   background-color: #BDAC8D;
   color: white;

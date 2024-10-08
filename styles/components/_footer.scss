@@ -129,7 +129,6 @@
         margin-top: 2rem;
 
         &__content {
-            // display: inline-block;
             margin: 1rem 1rem 3rem 0;
 
             &__item {
@@ -140,14 +139,12 @@
                     font-family: "Old Standard TT";
                     font-size: 1.5rem;
                     font-weight: 400;
-                    // text-align: left;
                 }
 
                 & h3 {
                     font-family: "Old Standard TT";
                     font-size: 1rem;
                     font-weight: 400;
-                    // text-align: left;
                 }
             }
         }
@@ -162,5 +159,46 @@
         font-family: "Roboto";
         font-weight: 700;
         margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer-container {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        width: 100%;
+
+        p {
+            margin-bottom: 0rem;
+            padding: 1rem;
+        }
+    }
+
+    .intro {
+        width: 25%;
+        min-width: 17rem;
+    }
+
+    .services {
+        width: 30%;
+        padding: 1rem;
+        min-width: 21rem;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .contactUs {
+        width: 25%;
+        min-width: 17rem;
     }
 }
