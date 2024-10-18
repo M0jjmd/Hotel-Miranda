@@ -656,6 +656,7 @@ body {
   }
   .popular-room-gallery__item {
     width: 18rem;
+    background-color: #FFFFFF;
   }
   .arrows-swiper {
     display: none;
