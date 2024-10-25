@@ -731,6 +731,8 @@ body {
 }
 .intro-video__container {
   width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 .intro-video__container__intro__cont {
   max-width: 50rem;
