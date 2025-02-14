@@ -533,7 +533,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .swiper-item {
-    max-width: 80%;
+    max-width: 65rem;
     display: flex;
     flex-direction: row;
     background-color: #fff;
